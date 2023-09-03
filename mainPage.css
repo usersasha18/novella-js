@@ -106,7 +106,7 @@ button:active {
 
   @media  (max-width: 400px) {
     .nextButton {
-        bottom: 165px;
+        bottom: 200px;
         left: 10%;
     }
   }
