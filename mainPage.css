@@ -103,3 +103,10 @@ button:active {
     left: 80%;
     z-index: 9999;
   }
+
+  @media  (max-width: 400px) {
+    .nextButton {
+        bottom: 165px;
+        left: 10%;
+    }
+  }

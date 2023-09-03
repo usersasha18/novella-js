@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
       document.querySelector('.start-menu').classList.add('show-menu');
   }, 1000)
+  document.querySelector('.nextButton').style.display = 'none';
   startgame();
   endGame();
   nextText()
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const startGameButton = document.querySelector('.start-game');
 const endGameButton = document.querySelector('.end-game');
 const bg = document.querySelector('.novel-container');
-  const nextButton = document.querySelector('.nextButton');
+const nextButton = document.querySelector('.nextButton');
 
 const startText = [
   "Я - персонаж этой игры, рада тебя видеть! Нажимай далее",
@@ -22,6 +23,7 @@ let currentScene = 0;
 
 const startgame = () => {
   startGameButton.onclick = () => {
+    nextButton.style.display = 'block';
     showFirstPesr()
   }
 }
